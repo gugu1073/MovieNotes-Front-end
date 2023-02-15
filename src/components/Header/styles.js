@@ -15,17 +15,38 @@ export const Container = styled.header`
  justify-content: space-between;
 
  padding: 0 80px;
+`;
 
+export const Input = styled.input`
+ height: 56px ;
+ width: 630px;
+ display: flex;
+ align-items: center;
+
+ background-color: rgba(38, 37, 41, 1);
+
+ border-radius: 10px;
+ border: 0; 
+ margin-top: 25px;
+ margin-left: 64px;
+ margin-right: 64px;
+
+  &::placeholder { 
+   color: ${({theme}) => theme.COLORS.GRAY_300};
+   padding-left: 24px;
+  }
 `;
 
 export const Profile = styled.div`
  display: flex;
  align-items: center;
+ margin-right: 123px;
 
  > img {
   width: 56px;
   height: 56px;
   border-radius: 50%;
+  margin-left: 9px;
  }
 
  > div {
@@ -36,12 +57,13 @@ export const Profile = styled.div`
  }
 
  span {
-  font-size: 14px;
-  color: ${( { theme } ) => theme.COLORS.GRAY_100 };
- }
+   font-size: 14px;
+   color: #948F99;
+   text-align: right;
+  }
 
  strong {
-  font-size: 18px;
+  font-size: 16px;
   color: ${( { theme } ) => theme.COLORS.WHITE };
  }
 `;
@@ -51,8 +73,9 @@ export const Logout = styled.button`
  background: none;
  cursor: pointer;
 
- > svg {
-  font-size: 36px;
+ > h1 {
+  font-size: 24px;
   color: ${( { theme } ) => theme.COLORS.GRAY_100 };
+  margin-left: 123px;
  }
 `;

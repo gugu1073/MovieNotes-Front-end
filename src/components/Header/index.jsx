@@ -1,24 +1,27 @@
-import {RiShutDownLine} from 'react-icons/ri'
-
-import {Container, Profile, Logout} from './styles'
-
+import {Container, Profile, Logout, Input} from './styles'
 
 export function Header() {
   return (
   <Container>
-   <Profile>
+      <Logout>
+        <h1>RocketMovies</h1>
+      </Logout>
+
+      <Input
+       placeholder='Pesquisar pelo título'
+      />
+
+    <Profile>
+
+      <div>
+       <strong>Gustavo Albuquerque</strong>
+       <span>Sair</span>
+      </div>
+
       <img src="https://github.com/gugu1073.png" 
       alt="user photo" />
-     
-      <div>
-       <span>Welcome</span>
-       <strong>Gustavo Albuquerque</strong>
-      </div>
     </Profile>
 
-    <Logout>
-      <RiShutDownLine/>
-    </Logout>
   </Container>
   );
 }
