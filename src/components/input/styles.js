@@ -5,7 +5,7 @@ export const Container = styled.div`
  display: flex;
  align-items: center;
 
- background-color: ${({theme}) => theme.COLORS.BACKGROUND_900};
+ background-color: rgba(38, 37, 41, 1);
 
  margin-bottom: 8px;
  border-radius: 10px;
@@ -28,5 +28,6 @@ export const Container = styled.div`
 
  svg {
     margin-left: 16px;
+    color: rgba(148, 143, 153, 1);
   }
 `;

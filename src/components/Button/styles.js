@@ -3,8 +3,9 @@ import styled from "styled-components";
 
 export const Container = styled.button`
  width: 100%;
- background-color: ${({theme}) => theme.COLORS.ORANGE} ;
+ background-color: #FF859B;
  color: ${({theme}) => theme.COLORS.BACKGROUND_800} ;
+ fill: solid;
 
  height: 56px;
  border: 0;
