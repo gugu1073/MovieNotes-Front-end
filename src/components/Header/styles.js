@@ -30,6 +30,8 @@ export const Input = styled.input`
  margin-top: 25px;
  margin-left: 64px;
  margin-right: 64px;
+ padding-left: 24px;
+ color: ${({theme}) => theme.COLORS.GRAY_300};
 
   &::placeholder { 
    color: ${({theme}) => theme.COLORS.GRAY_300};
@@ -40,7 +42,7 @@ export const Input = styled.input`
 export const Profile = styled.div`
  display: flex;
  align-items: center;
- margin-right: 123px;
+ margin-right: 70px;
 
  > img {
   width: 56px;
@@ -60,6 +62,8 @@ export const Profile = styled.div`
    font-size: 14px;
    color: #948F99;
    text-align: right;
+
+   cursor: pointer;
   }
 
  strong {
@@ -76,6 +80,6 @@ export const Logout = styled.button`
  > h1 {
   font-size: 24px;
   color: ${( { theme } ) => theme.COLORS.GRAY_100 };
-  margin-left: 123px;
+  margin-left: 70px;
  }
 `;
