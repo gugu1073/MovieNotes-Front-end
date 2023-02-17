@@ -31,7 +31,7 @@ export const Input = styled.input`
  margin-left: 64px;
  margin-right: 64px;
  padding-left: 24px;
- color: ${({theme}) => theme.COLORS.GRAY_300};
+ color: white;
 
   &::placeholder { 
    color: ${({theme}) => theme.COLORS.GRAY_300};
@@ -42,7 +42,8 @@ export const Input = styled.input`
 export const Profile = styled.div`
  display: flex;
  align-items: center;
- margin-right: 70px;
+ margin-right: 123px;
+ 
 
  > img {
   width: 56px;
