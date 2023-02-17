@@ -31,9 +31,8 @@ export const Form = styled.form`
     color: #FF859B;
     margin-right: 8px;
    }
-   
   }
-  
+ 
  > div input {
   height: 56px;
   width: 550px;
@@ -54,6 +53,11 @@ export const Form = styled.form`
 > .input {
   display: flex;
   gap: 40px;
+ }
+
+ >h3 {
+  margin-top: 40px;
+  color: ${({theme})  => theme.COLORS.GRAY_300};
  }
 
 `;

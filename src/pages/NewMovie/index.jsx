@@ -37,6 +37,8 @@ export function NewMovie() {
        <Textarea 
        placeholder='Observação'
        />
+
+       <h3>Marcadores</h3>
        
       </Form>
     </main>
