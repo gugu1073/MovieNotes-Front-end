@@ -22,14 +22,15 @@ export const Container = styled.div `
   gap: 24px;
 
   background-color: rgba(13, 12, 15, 1);
-  height: 88px;
-  width: 1148px;
+  height: 90px;
+  width: 1146px;
   border-radius: 10px;
   margin-top: 24px;
  }
 
  .button {
   display: inline-flex;
+
   gap: 75px;
    
   

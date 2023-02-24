@@ -5,6 +5,8 @@ import {Textarea} from "../../components/Textarea"
 import {Bookmarks} from "../../components/bookmarks"
 import {ButtonNewMovieBlack} from "../../components/ButtonNewMovieBlack"
 import {ButtonNewMoviePink} from "../../components/ButtonNewMoviePink"
+import {Section} from "../../components/Section"
+
 
 
 export function NewMovie() {
@@ -41,21 +43,20 @@ export function NewMovie() {
        <Textarea 
        placeholder='Observação'
        />
-         <h3>Marcadores</h3>
          
-        <section>  
+        <Section title="Marcadores">  
         <div className="tags">
          <Bookmarks value = "React"/>
-         <Bookmarks isNew placeholder = "Novo marcador"/>
+         <Bookmarks isNew placeholder = "Novo"/>
         </div>
-        </section>
+        </Section>
          
-         <section>
+         
           <div className="button">
-           <ButtonNewMovieBlack title= "Excluir Filmes"/>
+           <ButtonNewMovieBlack title= "Excluir Filmes" />
            <ButtonNewMoviePink  title= "Salvar alteração"/>
           </div>
-         </section>
+         
       </Form>
     </main>
 
