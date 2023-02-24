@@ -1,4 +1,3 @@
-import {Container, Form,} from "./style"
 import { Header } from "../../components/Header"
 import {FiArrowLeft} from "react-icons/fi"
 import {Textarea} from "../../components/Textarea"
@@ -7,6 +6,8 @@ import {ButtonNewMovieBlack} from "../../components/ButtonNewMovieBlack"
 import {ButtonNewMoviePink} from "../../components/ButtonNewMoviePink"
 import {Section} from "../../components/Section"
 
+import {Container, Form,} from "./style"
+import { Link } from "react-router-dom"
 
 
 export function NewMovie() {
@@ -18,9 +19,9 @@ export function NewMovie() {
 
        <header>
          <FiArrowLeft/>
-        <a 
+        <Link to="/"
         href="">Voltar
-        </a>
+        </Link>
         <h1>Novo filme</h1>
        </header>
         
