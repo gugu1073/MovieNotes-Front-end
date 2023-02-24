@@ -80,7 +80,7 @@ export const Logout = styled.button`
 
  > h1 {
   font-size: 24px;
-  color: ${( { theme } ) => theme.COLORS.GRAY_100 };
+  color: rgba(255, 133, 155, 1);
   margin-left: 70px;
  }
 `;
