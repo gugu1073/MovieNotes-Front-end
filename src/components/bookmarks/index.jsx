@@ -1,7 +1,7 @@
 import { Container} from "./style"
 import {FiPlus, FiX} from "react-icons/fi"
 
-export function bookmarks({isNew, value, onClick, ...rest}) {
+export function Bookmarks({isNew, value, onClick, ...rest}) {
  return (
   <Container isNew={isNew}>
    <input 

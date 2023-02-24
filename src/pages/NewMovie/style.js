@@ -10,6 +10,32 @@ export const Container = styled.div `
  grid-template-areas: 
  "header"
  "content" ;
+
+  > main {
+    grid-area: content;
+    overflow-y: auto;
+  }
+
+  .tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+
+  background-color: rgba(13, 12, 15, 1);
+  height: 88px;
+  width: 1148px;
+  border-radius: 10px;
+  margin-top: 24px;
+ }
+
+ .button {
+  display: inline-flex;
+  gap: 75px;
+   
+  
+  margin-top: 45px;
+ }
+
 `
 
 export const Form = styled.form`
@@ -56,9 +82,7 @@ export const Form = styled.form`
  }
 
  >h3 {
+  color: rgba(153, 149, 145, 1);
   margin-top: 40px;
-  color: ${({theme})  => theme.COLORS.GRAY_300};
  }
-
 `;
-
