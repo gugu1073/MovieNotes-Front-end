@@ -13,7 +13,8 @@ export function Note( {data , ...rest}) {
         data.tags.map(tag => 
         <Tag 
         key={tag.id} 
-        title={tag.name}/>) 
+        title={tag.name}
+        />) 
        }
        </footer>
       }

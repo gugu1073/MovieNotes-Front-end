@@ -3,29 +3,30 @@ import {Container, Content, NewNotes } from './styles'
 
 import {Header} from '../../components/Header'
 import {Note} from '../../components/Note'
-import {Input} from '../../components/input'
-import {Section} from '../../components/Section'
 
 export function Home() {
  return (
   <Container>
-    <Header/>
+   <Header/>
+    
+    <div>
+      <h1>Meus filmes</h1>
+
+      <NewNotes to="/newMovie">
+       <FiPlus/>
+        Adicionar filme    
+      </NewNotes>
+      
+    </div>
 
     <Content>
-      <Section title="Meus filmes">
       <Note data={{title: 'react', tags:[
         {id: '1', name: 'react' }, 
         {id: '2', name: 'rockets'}
       ]
       }}/>
-      </Section>
     </Content>
 
-    <NewNotes to="/newMovie">
-      <FiPlus/>
-      Adicionar filme    
-    </NewNotes>
   </Container>
-
  );
 }
