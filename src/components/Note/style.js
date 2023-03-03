@@ -2,14 +2,14 @@ import styled from "styled-components";
 
 
 export const Container = styled.button`
- width: 100%;
+ width: 1195px;
  background-color:rgba(255, 133, 155, 0.05);
 
  border: none;
  border-radius: 10px;
  padding: 22px;
  margin-bottom: 16px;
-
+ 
  cursor: pointer;
 
  > h1 {

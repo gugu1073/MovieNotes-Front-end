@@ -13,14 +13,15 @@ export const Container = styled.div`
   margin-right: 190px;
   margin-top: 50px;
   margin-left: 152px;
+  margin-bottom: 40px;
  }
 `;
 
-export const Content =   styled.div`
+export const Content = styled(Link)`
  padding: 0 64px;
  overflow-y: auto;
 
- 
+ margin-left: 88px;
 `;
 
 export const NewNotes =  styled(Link)`
