@@ -22,7 +22,10 @@ export function Home() {
        {id: '1', name: 'react' }, 
        {id: '2', name: 'rockets'}
       ]
-      }}/>
+      }}
+      />
+
+      
     </Content>
 
 
