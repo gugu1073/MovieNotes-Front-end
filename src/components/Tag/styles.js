@@ -6,8 +6,8 @@ export const Container = styled.span`
 
  border-radius: 5px;
  margin-right: 6px;
- color: ${({theme}) => theme.COLORS.BACKGROUND_900 };
- background-color: ${({theme}) => theme.COLORS.ORANGE };
+ color: rgba(229, 229, 229, 1);
+ background-color:rgba(49, 46, 56, 1);
 
  cursor: pointer;
 `

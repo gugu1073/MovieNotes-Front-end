@@ -11,21 +11,20 @@ export function Home() {
     
     <div>
       <h1>Meus filmes</h1>
-
       <NewNotes to="/newMovie">
        <FiPlus/>
         Adicionar filme    
       </NewNotes>
-      
-    </div>
+    </div> 
 
     <Content>
-      <Note data={{title: 'react', tags:[
-        {id: '1', name: 'react' }, 
-        {id: '2', name: 'rockets'}
+      <Note data={{title: 'Interestellar',   tags:[
+       {id: '1', name: 'react' }, 
+       {id: '2', name: 'rockets'}
       ]
       }}/>
     </Content>
+
 
   </Container>
  );

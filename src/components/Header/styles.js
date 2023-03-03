@@ -37,6 +37,10 @@ export const Input = styled.input`
    color: ${({theme}) => theme.COLORS.GRAY_300};
    padding-left: 24px;
   }
+
+  > svg {
+    color: #948F99;
+  }
 `;
 
 export const Profile = styled(Link)`

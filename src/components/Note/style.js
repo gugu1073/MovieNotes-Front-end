@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 export const Container = styled.button`
  width: 100%;
- background-color: ${({theme})  => theme.COLORS.BACKGROUND_700};
+ background-color:rgba(255, 133, 155, 0.05);
 
  border: none;
  border-radius: 10px;
@@ -21,8 +21,9 @@ export const Container = styled.button`
  }
 
  > footer {
-  width: 100%;
   display: flex;
   margin-top: 24px;
+
+  width: 100%;
  }
 `;

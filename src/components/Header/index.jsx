@@ -7,9 +7,10 @@ export function Header() {
         <h1>RocketMovies</h1>
       </Logout>
 
-      <Input
+      <Input 
        placeholder='Pesquisar pelo título'
-      />
+       />
+       
 
     <Profile to="/profile">
 
