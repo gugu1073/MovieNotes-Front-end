@@ -10,19 +10,19 @@ export const Container = styled.div`
  > div {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-right: 190px;
   margin-top: 50px;
   margin-left: 152px;
   margin-bottom: 40px;
  }
+
 `;
 
 export const Content = styled(Link)`
  padding: 0 64px;
  overflow-y: auto;
-
- margin-left: 88px;
-`;
+ `;
 
 export const NewNotes =  styled(Link)`
 

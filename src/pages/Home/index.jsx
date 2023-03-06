@@ -18,16 +18,32 @@ export function Home() {
     </div> 
 
     <Content to="/details/23">
-      <Note data={{title: 'Interestellar',   tags:[
-       {id: '1', name: 'react' }, 
-       {id: '2', name: 'rockets'}
+      
+      <Note data={{title: 'Interestellar',    tags:[
+       {id: '1', name: 'Ficção Científica' }, 
+       {id: '2', name: 'Drama'},
+       {id: '3', name: 'Família'}
       ]
-      }}
+      }} 
       />
 
-      
-    </Content>
+      <Note data={{title: 'Interestellar',    tags:[
+       {id: '1', name: 'Ficção Científica' }, 
+       {id: '2', name: 'Drama'},
+       {id: '3', name: 'Família'}
+      ]
+      }} 
+      />
 
+      <Note data={{title: 'Interestellar',    tags:[
+       {id: '1', name: 'Ficção Científica' }, 
+       {id: '2', name: 'Drama'},
+       {id: '3', name: 'Família'}
+      ]
+      }} 
+      />
+ 
+    </Content>
 
   </Container>
  );
