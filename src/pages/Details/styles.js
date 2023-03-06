@@ -13,48 +13,48 @@ export const Container = styled.div`
   > main {
     grid-area: content;
     overflow-y: auto;
-    padding: 64px 0;
+    padding: 6.4rem 0;
   }
 `;
 
 
 export const Content = styled.div`
- max-width: 1137px;
- max-height: 600px;
+ max-width: 113.7rem;
+ max-height: 60rem;
 
  display: flex;
  flex-direction: column;
- margin-left: 123px;
- margin-right: 123px;
+ margin-left: 12.3rem;
+ margin-right: 12.3rem;
 
  > div {
-  font-size: 24px;
+  font-size: 2.4rem;
   font-weight: 500;
-  margin-top: 24px;
+  margin-top: 2.4rem;
 
   display: flex;
-  gap: 10px;
+  gap: 1rem;
 
   svg {
-    margin-top: 25px;
+    margin-top: 2.5rem;
   }
  }
 
  > p {
-  font-size: 16px;
-  margin-top: 40px;
+  font-size: 1.6rem;
+  margin-top: 4rem;
   text-align: justify;
 
-  margin-bottom: -15px;
+  margin-bottom: -1.5rem;
  }
 
 
   > header {  
-      margin-top: -30px;
+      margin-top: -3rem;
     a {
      color:rgba(255, 133, 155, 1);
 
-     margin-left: 8px;
+     margin-left: 0.8rem;
     }
 
     svg {
@@ -67,14 +67,14 @@ export const Content = styled.div`
     
      
     img {
-      width: 16px;
-      height: 16px;
+      width: 1.6rem;
+      height: 1.6rem;
 
-      margin-top: 3px;
+      margin-top: 0.3rem;
     }
 
     p {
-      font-size: 16px;
+      font-size: 1.6rem;
       font-weight: 400;
       color: rgba(244, 237, 232, 1);
     }
@@ -82,9 +82,9 @@ export const Content = styled.div`
     svg {
       color: rgba(255, 133, 155, 1);
       margin-top: 1px;
-      width: 16px;
-      height: 16px;
-      margin-left: 8px;
+      width: 1.6rem;
+      height: 1.6rem;
+      margin-left: 0.8rem;
     }
   }
 `;

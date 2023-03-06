@@ -2,28 +2,28 @@ import styled from "styled-components";
 
 
 export const Container = styled.button`
- width: 1195px;
+ width: 119.5rem;
  background-color:rgba(255, 133, 155, 0.05);
 
  border: none;
- border-radius: 10px;
- padding: 22px;
- margin-bottom: 16px;
+ border-radius: 1rem;
+ padding: 2.2rem;
+ margin-bottom: 1.6rem;
  
  display: block;
- margin-left: 150px;
+ margin-left: 15rem;
  cursor: pointer;
 
  > h1 {
   flex: 1;
   text-align: left;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 2.4rem;
   color:${({theme})  => theme.COLORS.WHITE};
  }
 
   > p {
-    font-size: 16px;
+    font-size: 1.6rem;
     color: rgba(153, 149, 145, 1);
     font-weight: 400;
 
@@ -31,13 +31,13 @@ export const Container = styled.button`
   }
  
  > svg {
-  margin-right: 1065px;
-  margin-top: 8px;
+  margin-right: 106.5rem;
+  margin-top: 0.8rem;
  }
 
  > footer {
   display: flex;
-  margin-top: 24px;
+  margin-top: 2.4rem;
 
   width: 100%;
  }

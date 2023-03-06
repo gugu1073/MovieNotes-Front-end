@@ -11,16 +11,16 @@ export const Container = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-right: 190px;
-  margin-top: 50px;
-  margin-left: 152px;
-  margin-bottom: 40px;
+  margin-right: 19rem;
+  margin-top: 5rem;
+  margin-left: 15.2rem;
+  margin-bottom: 4rem;
  }
 
 `;
 
 export const Content = styled(Link)`
- padding: 0 64px;
+ padding: 0 6.4rem;
  overflow-y: auto;
  `;
 
@@ -31,14 +31,14 @@ export const NewNotes =  styled(Link)`
  display: flex;
  justify-content: center;
  align-items: center;
- width: 207px;
- height: 48px ;
- border-radius: 10px;
+ width: 20.7rem;
+ height: 4.8rem ;
+ border-radius: 1rem;
 
  border: none;
  cursor: pointer;
 
  svg {
-  margin-right: 8px;
+  margin-right: 0.8rem;
  }
 `;

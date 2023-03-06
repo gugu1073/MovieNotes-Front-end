@@ -17,37 +17,37 @@ export const Container = styled.div `
   }
 
   .tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
+   display: flex;
+   flex-wrap: wrap;
+   gap: 2.4rem;
 
-  background-color: rgba(13, 12, 15, 1);
-  height: 90px;
-  width: 1146px;
-  border-radius: 10px;
-  margin-top: 24px;
+   background-color: rgba(13, 12, 15, 1);
+   height: 9rem;
+   width: 114.6rem;
+   border-radius: 1rem;
+   margin-top: 2.4rem;
  }
 
  .button {
-  display: inline-flex;
+   display: inline-flex;
 
-  gap: 75px;
+   gap: 7.5rem;
    
   
-  margin-top: 45px;
+   margin-top: 4.5rem;
  }
 
 `
 
 export const Form = styled.form`
-  max-width: 550px;
-  margin: 150px ;
-  margin-top: 40px;
+  max-width: 55rem;
+  margin: 15rem ;
+  margin-top: 4rem;
 
   > header {
-    margin-bottom: 40px;
+    margin-bottom: 4rem;
    h1{
-    margin-top: 24px;
+    margin-top: 2.4rem;
    }
 
    a{
@@ -56,20 +56,20 @@ export const Form = styled.form`
    
    svg {
     color: #FF859B;
-    margin-right: 8px;
+    margin-right: 0.8rem;
    }
   }
  
  > div input {
-  height: 56px;
-  width: 550px;
-  padding: 12px;
-  margin-top: 20px;
+  height: 5.6rem;
+  width: 55rem;
+  padding: 1.2rem;
+  margin-top: 2rem;
   
   color: ${({theme}) => theme.COLORS.WHITE};
   background: transparent;
   border: 0;
-  border-radius: 10px;
+  border-radius: 1rem;
   background-color: #262529;
   
   &::placeholder { 
@@ -79,11 +79,11 @@ export const Form = styled.form`
 
 > .input {
   display: flex;
-  gap: 40px;
+  gap: 4rem;
  }
 
  >h3 {
   color: rgba(153, 149, 145, 1);
-  margin-top: 40px;
+  margin-top: 4rem;
  }
 `;

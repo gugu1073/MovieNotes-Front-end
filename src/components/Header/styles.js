@@ -14,28 +14,28 @@ export const Container = styled.header`
  display: flex;
  justify-content: space-between;
 
- padding: 0 80px;
+ padding: 0 8rem;
 `;
 
 export const Input = styled.input`
- height: 56px ;
- width: 630px;
+ height: 5.6rem ;
+ width: 63rem;
  display: flex;
  align-items: center;
 
  background-color: rgba(38, 37, 41, 1);
 
- border-radius: 10px;
+ border-radius: 1rem;
  border: 0; 
- margin-top: 25px;
- margin-left: 64px;
- margin-right: 64px;
- padding-left: 24px;
+ margin-top: 2.5rem;
+ margin-left: 6.4rem;
+ margin-right: 6.4rem;
+ padding-left: 2.4rem;
  color: white;
 
   &::placeholder { 
    color: ${({theme}) => theme.COLORS.GRAY_300};
-   padding-left: 24px;
+   padding-left: 2.4rem;
   }
 
   > svg {
@@ -46,25 +46,25 @@ export const Input = styled.input`
 export const Profile = styled(Link)`
  display: flex;
  align-items: center;
- margin-right: 123px;
+ margin-right: 12.3rem;
  
 
  > img {
-  width: 56px;
-  height: 56px;
+  width: 5.6rem;
+  height: 5.6rem;
   border-radius: 50%;
-  margin-left: 9px;
+  margin-left: 0.9rem;
  }
 
  > div {
   display: flex;
   flex-direction: column;
-  margin-left: 16px;
-  line-height: 24px;
+  margin-left: 1.6rem;
+  line-height: 2.4rem;
  }
 
  span {
-   font-size: 14px;
+   font-size: 1.4rem;
    color: #948F99;
    text-align: right;
 
@@ -72,19 +72,20 @@ export const Profile = styled(Link)`
   }
 
  strong {
-  font-size: 16px;
+  font-size: 1.6rem;
   color: ${( { theme } ) => theme.COLORS.WHITE };
  }
 `;
 
-export const Logout = styled.button`
+export const Logout = styled(Link)`
  border: none;
  background: none;
  cursor: pointer;
+ margin-top: 3.6rem;
 
  > h1 {
-  font-size: 24px;
+  font-size: 2.4rem;
   color: rgba(255, 133, 155, 1);
-  margin-left: 70px;
+  margin-left: 7rem;
  }
 `;

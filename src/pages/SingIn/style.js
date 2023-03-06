@@ -10,7 +10,7 @@ export const Container = styled.div`
 `;
 
 export const Form = styled.form`
- padding: 0 136px;
+ padding: 0 13.6rem;
  
  display: flex; 
  flex-direction: column;
@@ -20,23 +20,23 @@ export const Form = styled.form`
  text-align: center;
 
  > h1 {
-  font-size: 48px;
+  font-size: 4.8rem;
   color: ${({theme}) => theme.COLORS.ORANGE};
  }  
 
  > h2 {
-  font-size: 24px;
-  margin-top: 84px;
-  margin-bottom: 24px;
+  font-size: 2.4rem;
+  margin-top: 8.4rem;
+  margin-bottom: 2.4rem;
  }
 
  > p {
-  font-size: 14px;
+  font-size: 1.4rem;
   color: ${({theme}) => theme.COLORS.GRAY_100 };
  }
  
  > a {
-  margin-top: 124px; 
+  margin-top: 12.4rem; 
   color: ${({theme}) => theme.COLORS.ORANGE};
  } 
 `;

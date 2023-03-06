@@ -2,22 +2,22 @@ import styled from "styled-components";
 
 
 export const Container = styled.textarea`
-  width: 1145px;
-  height: 274px;
-  margin-top: 40px;
+   width: 114.5rem;
+   height: 27.4rem;
+   margin-top: 4rem;
 
-  background-color: rgba(38, 37, 41, 1);
-  color: white;
+   background-color: rgba(38, 37, 41, 1);
+   color: white;
 
-  border: none;
-  resize: none;
+   border: none;
+   resize: none;
 
-  margin-bottom: 8px;
-  border-radius: 10px;
-  padding: 16px;
+   margin-bottom: 0.8rem;
+   border-radius: 1rem;
+   padding: 1.6rem;
   
   
     &::placeholder {
-    color: rgba(148, 143, 153, 1);
+    color: ${({theme}) => theme.COLORS.GRAY_300};
     }
 `;

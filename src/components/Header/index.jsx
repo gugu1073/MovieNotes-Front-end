@@ -3,7 +3,7 @@ import {Container, Profile, Logout, Input} from './styles'
 export function Header() {
   return (
   <Container>
-      <Logout>
+      <Logout to='/' >
         <h1>RocketMovies</h1>
       </Logout>
 

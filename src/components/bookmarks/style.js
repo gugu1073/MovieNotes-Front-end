@@ -3,21 +3,21 @@ import styled from "styled-components";
 export const Container = styled.div`
  display: flex;
  align-items: center;
- height: 56px;
+ height: 5.6rem;
  
- margin-top: 16px;
- margin-left: 16px;
+ margin-top: 1.6rem;
+ margin-left: 1.6rem;
  
  background-color: ${({theme, isNew}) => isNew ? "transparent" : theme.COLORS.BACKGROUND_900};
  color: ${({theme}) => theme.COLORS.GRAY_300};
 
  border: ${({theme, isNew}) => isNew ? `1px dashed ${theme.COLORS.GRAY_300}` : "none"};
- margin-bottom: 8px;
+ margin-bottom: 0.8rem;
 
  color: rgba(148, 143, 153, 1);
  
- border-radius: 10px;
- padding-right: 16px;
+ border-radius: 1rem;
+ padding-right: 1.6rem;
   
  > button {
   border: none;
@@ -26,7 +26,7 @@ export const Container = styled.div`
  
  > input {
    width: 100px; 
-   gap: 40px;
+   gap: 4rem;
    text-align: center;
    color: white;
    background: transparent;

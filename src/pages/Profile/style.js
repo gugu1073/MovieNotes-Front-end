@@ -6,51 +6,51 @@ export const Container = styled.div `
   
  > header {
   width: 100%;
-  height: 144px;
+  height: 14.4rem;
 
   background: ${({theme}) => theme.COLORS.BACKGROUND_900};
 
   display: flex;
   align-items: center;
 
-  padding: 0 124px;
+  padding: 0 12.4rem;
  }
 
  svg {
   color: ${({theme}) => theme.COLORS.GRAY_100};
-  font-size: 24px;
+  font-size: 2.4rem;
  }
 `;
 
 export const Form = styled.form`
- max-width: 340px;
- margin: 30px auto 0;
+ max-width: 34rem;
+ margin: 3rem auto 0;
 
  svg {
   color: rgba(148, 143, 153, 1);
  }
 
  > div:nth-child(3) {
-   margin-top: 24px;
+   margin-top: 2.4rem;
   }
 `;
 
 export const Avatar = styled.div`
   position: relative;
-  margin: -90px auto 32px;
+  margin: -9rem auto 3.2rem;
 
-  width: 186px;
-  height: 186px;
+  width: 18.6rem;
+  height: 18.6rem;
 
  > img {
    border-radius: 50%;
-   width: 186px;
-   height: 186px;
+   width: 18.6rem;
+   height: 18.6rem;
  }
 
   > label {
-    width: 48px;
-    height: 48px;
+    width: 4.8rem;
+    height: 4.8rem;
 
     background-color: ${({theme}) => theme.COLORS.ORANGE};
     border-radius: 50%;
@@ -59,8 +59,8 @@ export const Avatar = styled.div`
     justify-content: center;
 
     position: absolute;
-    bottom: 7px;
-    right: 7px;
+    bottom: 0.7rem;
+    right: 0.7rem;
     cursor: pointer;
 
     input {
