@@ -8,7 +8,6 @@ export function Home() {
  return (
   <Container>
    <Header/>
-    
     <div>
       <h1>Meus filmes</h1>
       <NewNotes to="/newMovie">
@@ -42,8 +41,9 @@ export function Home() {
       ]
       }} 
       />
- 
+
     </Content>
+    
 
   </Container>
  );

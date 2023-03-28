@@ -16,7 +16,6 @@ export const Container = styled.div`
   margin-left: 15.2rem;
   margin-bottom: 4rem;
  }
-
 `;
 
 export const Content = styled(Link)`
