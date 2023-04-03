@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Container, Form, Background } from "./style";
 import { Link } from "react-router-dom";
 
-import {api} from "../../services/api";
+import {api} from "";
 
 import {Input} from "../../components/Input"
 import {Button} from "../../components/Button"
