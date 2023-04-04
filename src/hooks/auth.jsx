@@ -14,6 +14,7 @@ function AuthProvider({children}) {
       const {user, token} = response.data;
 
       api.defaults.headers.authorization = `Bearer ${token}`;
+      setData({user, token})
 
     } catch (error) {
        if(error.response) {
@@ -25,10 +26,17 @@ function AuthProvider({children}) {
   } 
   
   return(
-    <AuthContext.Provider value={{singIn, user: data.user}}>
+    <AuthContext.Provider value={{
+      
+      singIn, 
+      user: data.user
+      
+      }}>
+
       {children}
+
     </AuthContext.Provider>
-  )
+  );
 }
 
 function useAuth(){

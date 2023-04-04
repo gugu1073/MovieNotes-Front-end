@@ -12,10 +12,10 @@ export function SignIn() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const {signIn} = useAuth();
+  const {singIn} = useAuth();
 
-  function handleSignIn() {
-    signIn({email, password});
+  function handleSignIn() { 
+    singIn({email, password});
   }
 
   return (
