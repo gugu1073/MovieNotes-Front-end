@@ -15,6 +15,31 @@ export const Container = styled.header`
  justify-content: space-between;
 
  padding: 0 8rem;
+
+
+ div {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1.6rem;
+  line-height: 2.4rem;
+
+  margin-top: 3rem;
+ }
+
+ span {
+   font-size: 1.4rem;
+   color: #948F99;
+   text-align: right;
+
+   cursor: pointer;
+  }
+
+  
+ strong {
+  font-size: 1.6rem;
+  color: ${( { theme } ) => theme.COLORS.WHITE };
+ }
+
 `;
 
 export const Input = styled.input`
@@ -54,26 +79,6 @@ export const Profile = styled(Link)`
   height: 5.6rem;
   border-radius: 50%;
   margin-left: 0.9rem;
- }
-
- > div {
-  display: flex;
-  flex-direction: column;
-  margin-left: 1.6rem;
-  line-height: 2.4rem;
- }
-
- span {
-   font-size: 1.4rem;
-   color: #948F99;
-   text-align: right;
-
-   cursor: pointer;
-  }
-
- strong {
-  font-size: 1.6rem;
-  color: ${( { theme } ) => theme.COLORS.WHITE };
  }
 `;
 

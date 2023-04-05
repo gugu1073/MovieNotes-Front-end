@@ -1,6 +1,9 @@
 import {Container, Profile, Logout, Input} from './styles'
 
+import {useAuth} from '../../hooks/auth'
+
 export function Header() {
+  const {signOut} = useAuth();
   return (
   <Container>
       <Logout to='/' >
@@ -11,13 +14,12 @@ export function Header() {
        placeholder='Pesquisar pelo título'
        />
        
-
-    <Profile to="/profile">
-
       <div>
        <strong>Gustavo Albuquerque</strong>
-       <span>Sair</span>
+       <span onClick={signOut}>Sair</span>
       </div>
+
+    <Profile to="/profile">
 
       <img src="https://github.com/gugu1073.png" 
       alt="user photo" />
