@@ -16,9 +16,9 @@ function AuthProvider({children}) {
       localStorage.setItem("@rocketmovie:user", JSON.stringify(user));
       localStorage.setItem("@rocketmovie:token", token);
 
-      api.defaults.headers.authorization = `Bearer ${token}`;
-      setData({user, token})
+      api.defaults.headers.common['Authorization'] = `Bearer ${token}`;
 
+      setData({user, token})
     } catch (error) {
        if(error.response) {
         alert(error.response.data.message);
@@ -41,7 +41,7 @@ function AuthProvider({children}) {
     const user =  localStorage.getItem("@rocketmovie:user");
 
     if(token && user) {
-      api.defaults.headers.authorization = `Bearer ${token}`;
+      api.defaults.headers.common['Authorization'] = `Bearer ${token}`;
 
       setData({
        token, 
