@@ -35,7 +35,25 @@ function AuthProvider({children}) {
      setData({}); 
   }
 
+  async function updateProfile({user}){
+    try{
 
+     await api.put("/users", user);
+     localStorage.setItem("@rocketmovie:user", JSON.stringify(user));
+
+     setData({user, token: data.token});
+
+     alert("Perfil atualizado!")
+
+    } catch (error) {
+       if(error.response) {
+        alert(error.response.data.message);
+       }else {
+        alert("Não foi possível atualizar o perfil.")
+       }
+  }
+
+  }
   useEffect(() => {
     const token = localStorage.getItem("@rocketmovie:token");
     const user =  localStorage.getItem("@rocketmovie:user");
@@ -56,8 +74,8 @@ function AuthProvider({children}) {
       
       singIn, 
       user: data.user, 
-      signOut
-      
+      signOut,
+      updateProfile
       }}>
 
       {children}
