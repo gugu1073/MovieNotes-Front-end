@@ -1,3 +1,5 @@
+import { useState } from "react"
+
 import { Header } from "../../components/Header"
 import {FiArrowLeft} from "react-icons/fi"
 import {Textarea} from "../../components/Textarea"
@@ -11,6 +13,18 @@ import { Link } from "react-router-dom"
 
 
 export function NewMovie() {
+  const [tags, setTags] = useState([])
+  const [newTag, setNewTag] = useState("")
+  
+  function handleAddTag() {
+    setTags(prevState => [...prevState, newTag]);
+    setNewTag("");
+  }
+
+  function handleRemoveTag(deleted) {
+   setTags(prevState => prevState.filter(tag => tag  !==  deleted));
+  }
+
   return (
    <Container>
     <Header/>
@@ -47,8 +61,22 @@ export function NewMovie() {
          
         <Section title="Marcadores">  
         <div className="tags">
-         <Bookmarks value = "React"/>
-         <Bookmarks isNew placeholder = "Novo"/>
+          {
+            tags.map((tag, index) => (
+              <Bookmarks 
+               key={String(index)}
+               value={tag}
+               onClick={() => handleRemoveTag(tag)}
+              />
+            ))  
+         }
+
+          <Bookmarks 
+           isNew placeholder = "Novo"
+           onChange={e => setNewTag(e.target.value)}
+           value={newTag}
+           onClick={handleAddTag}
+          />
         </div>
         </Section>
          

@@ -25,7 +25,7 @@ export const Container = styled.div`
   }
  
  > input {
-   width: 100px; 
+   width: 15rem; 
    gap: 4rem;
    text-align: center;
    color: white;
