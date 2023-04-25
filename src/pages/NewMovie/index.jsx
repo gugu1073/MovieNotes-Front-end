@@ -1,7 +1,6 @@
 import { useState } from "react"
 import { useNavigate } from "react-router-dom"
 
-
 import { Header } from "../../components/Header"
 import {FiArrowLeft} from "react-icons/fi"
 import {Textarea} from "../../components/Textarea"
@@ -40,14 +39,14 @@ export function NewMovie() {
     if(!title) {
       return alert("Digite o título da nota")
     }
-    
+
 
     if(newTag) {
       return alert("Você deixou uma tag no campo para adicionar, mas não clicou em adicionar. Clique para adicionar ou deixe o campo vazio  ");
     }
       
    await api.post("/notes",{
-    title, 
+    title,  
     description,
     movie_tags,
     rating: result

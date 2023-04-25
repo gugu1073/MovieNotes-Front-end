@@ -1,10 +1,15 @@
 import {FiPlus} from 'react-icons/fi';
 import {Container, Content, NewNotes } from './styles'
 
+import { useState } from 'react';
+
 import {Header} from '../../components/Header'
 import {Note} from '../../components/Note'
 
 export function Home() {
+  
+  const [notes, setNotes] = useState([])
+  
  return (
   <Container>
    <Header/>
@@ -18,31 +23,14 @@ export function Home() {
 
     <Content to="/details/23">
       
-      <Note data={{title: 'Interestellar',    tags:[
+    <Note data={{title: 'Interestellar',    tags:[
        {id: '1', name: 'Ficção Científica' }, 
        {id: '2', name: 'Drama'},
        {id: '3', name: 'Família'}
       ]
       }} 
-      />
-
-      <Note data={{title: 'Interestellar',    tags:[
-       {id: '1', name: 'Ficção Científica' }, 
-       {id: '2', name: 'Drama'},
-       {id: '3', name: 'Família'}
-      ]
-      }} 
-      />
-
-      <Note data={{title: 'Interestellar',    tags:[
-       {id: '1', name: 'Ficção Científica' }, 
-       {id: '2', name: 'Drama'},
-       {id: '3', name: 'Família'}
-      ]
-      }} 
-      />
-
-    </Content>
+      />  
+      </Content>
     
 
   </Container>
