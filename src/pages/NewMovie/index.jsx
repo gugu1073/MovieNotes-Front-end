@@ -14,7 +14,6 @@ import { Link } from "react-router-dom"
 
 import { api } from "../../services/api"
 
-
 export function NewMovie() {
   const [title, setTitle] = useState("")
   const [result, setResult] = useState("")
